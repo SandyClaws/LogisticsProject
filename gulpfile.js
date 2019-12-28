@@ -17,7 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task("css", function () {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src("source/sass/style.sass")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -25,13 +25,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -97,5 +97,6 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+/*gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));*/
+gulp.task("build", gulp.series("css", "html"));
 gulp.task("start", gulp.series("build", "server"));
