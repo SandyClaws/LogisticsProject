@@ -1,0 +1,39 @@
+@media(max-width: 1023px)
+  .header
+    &-menu
+      display: none
+  .hide-mobile
+    display: none
+@media(max-width: 767px)
+  .header
+    &-logo
+      margin-top: 16px
+    &-block
+      height: 64px
+      align-items: center
+    &-phone
+      &__item
+        display: none!important
+  .mobile-menu_btn
+    display: inline-block
+@media(min-width: 768px) and (max-width: 1023px)
+  .header
+    &-navbar
+      left: 40%
+    &-logo
+      left: 17px
+      top: 20px
+    &-block
+      align-items: center
+      height: 64px
+      padding-right: 20px
+      padding-left: 24px
+    &-phone
+      &__item
+        margin-top: 0
+        margin-left: 0
+  .mobile-menu_btn
+    display: inline-block
+@media(min-width: 1024px)
+  .hide-desktop
+    display: none
