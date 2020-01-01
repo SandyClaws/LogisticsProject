@@ -1,5 +1,9 @@
 .header
   &-items
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
     padding: 0px 48px
     display: flex
     justify-content: space-between
@@ -11,6 +15,7 @@
     margin-top: 40px
     max-width: 100%
     margin-left: 20%
+    z-index: 2
     &_btn
       width: 40px
       height: 40px
@@ -18,13 +23,15 @@
       position: relative
       background-color: transparent
       border: none
+      z-index: 2
     &__item
-      margin-left: 32px
+      margin-left: 29px
       font-weight: 600
       font-size: 14px
   &-phone
     margin-top: 40px
     display: inline-block
+    z-index: 2
 .active-menu
     position: absolute
     width: 100%
@@ -36,6 +43,7 @@
     text-align: center
     padding-top: 160px
     padding-bottom: 10px
+    z-index: 2
 .menu-button_line
   display: inline-block
   position: absolute

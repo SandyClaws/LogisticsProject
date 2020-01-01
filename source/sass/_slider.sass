@@ -1,0 +1,120 @@
+.slider
+  z-index: 0
+  &-arrow
+    margin-right: 48px
+  &-client
+    flex-basis: 20%
+    &s
+      &-wrap
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+  &-service
+    flex-basis: 20%
+    &__icon
+    &__line
+      width: 96px
+      height: 1px
+      background-color: #fff
+      margin-top: 24px
+      margin-bottom: 24px
+    &__title
+      max-width: 80%
+      margin-bottom: 55px
+      font-weight: 500
+      font-size: 16px
+      line-height: 20px
+      letter-spacing: 0.02em
+      color: #F7F7F7
+      +sb
+    &s
+      &-wrap
+        display: flex
+        flex-wrap: wrap
+  &-number
+    margin-right: 47px
+    &:last-child
+      margin-right: 0
+    &__value
+      font-size: 80px
+      line-height: 100%
+      letter-spacing: -0.04em
+      +bold
+    &__items
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 200px
+      height: 32px
+      background-color: #ffffff
+      border: none
+      color: #E75333
+      font-size: 14px
+      line-height: 17px
+      text-transform: uppercase
+      font-weight: 600
+      margin-top: -10px
+    &__title
+      text-transform: uppercase
+      font-size: 14px
+      line-height: 20px
+      margin-top: 5px
+      +sb
+    &s
+      &-wrap
+        display: flex
+  &-description
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 3%
+    margin-left: 0.5%
+  &-button
+    width: 204px
+    height: 65px
+  &-subtitle
+    font-size: 16px
+    line-height: 170%
+    font-weight: 500
+    margin-top: 85px
+    max-width: 456px
+  &-title
+    padding-top: 193px
+  &-title
+    text-transform: uppercase
+    font-size: 64px
+    line-height: 125%
+    letter-spacing: 0.02em
+    max-width: 1080px
+    +bold
+  &-item
+    display: none
+    height: 846px
+    padding: 0% 5.5%
+    border: 2px solid green
+    &_bg1
+      background: #484848 url("../images/slider/first-bg.png") no-repeat center
+      background-size: cover
+    &_bg2
+      background: #484848 url("../images/slider/second-bg.png") no-repeat center
+      background-size: cover
+    &_bg3
+      background: #484848 url("../images/slider/third-bg.png") no-repeat center
+      background-size: cover
+    &_bg4
+      background: #484848 url("../images/slider/map.png") no-repeat center
+      background-size: cover
+    &s
+      border: 2px solid red
+.dot
+  cursor: pointer
+  height: 15px
+  width: 15px
+  margin: 0 2px
+  background-color: #bbb
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+  &s
+.active
+  background-color: red

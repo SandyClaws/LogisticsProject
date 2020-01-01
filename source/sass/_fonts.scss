@@ -8,6 +8,34 @@
   font-style: normal;
   }
 
+  @font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../fonts/Montserrat-ExtraBold.eot');
+    src: url('../fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-ExtraBold.woff') format('woff'),
+    url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Montserrat Semibold';
+      src: url('../fonts/Montserrat-SemiBold.eot');
+      src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+      url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+
   @mixin normal{
     font-family: "Montserrat Regular", sans-serif;
+  }
+
+  @mixin sb{
+    font-family: "Montserrat Semibold", sans-serif;
+  }
+
+  @mixin bold{
+    font-family: "Montserrat Bold", sans-serif;
   }
