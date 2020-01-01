@@ -1,0 +1,74 @@
+.footer
+  flex-grow: 0
+  background-color: #1d1d1d
+  padding-left: 48px
+  padding-right: 32px
+  padding-top: 20px
+  padding-bottom: 20px
+  font-size: 11px
+  line-height: 13px
+  &-items
+    display: flex
+    align-items: center
+  &-copy
+    font-size: 11px
+    line-height: 13px
+    font-weight: 500
+    flex-grow: 0
+  &-download
+    flex-grow: 1
+    display: inline-block
+    margin-left: 57px
+    img
+      margin-left: 5px
+      cursor: pointer
+  &-nav
+    font-size: 12px
+    line-height: 15px
+    font-weight: 500
+    &__item
+      text-transform: none
+      margin-right: 16px
+      &:last-child
+        margin-right: 0
+    img
+      margin-right: 5px
+    &__item
+@media(min-width: 767px) and (max-width: 1023px)
+  .footer
+
+    &-items
+      flex-wrap: wrap
+      justify-content: space-between
+    &-copy
+      flex-grow: 0
+      order: 1
+    &-download
+      flex-grow: 0
+      order: 3
+      margin-left: 0
+    &-nav
+      flex-grow: 0
+      flex-basis: 60%
+      order: 2
+@media(max-width: 766px)
+  .footer
+    &-items
+      flex-wrap: wrap
+      justify-content: flex-start
+    &-copy
+      flex-grow: 0
+      order: 3
+      opacity: 0.4
+    &-download
+      flex-grow: 0
+      order: 1
+      margin-left: 0
+      margin-bottom: 12px
+    &-nav
+      flex-grow: 0
+      order: 2
+      margin-bottom: 12px
+      img
+        display: none
+      &__item

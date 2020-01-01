@@ -7,49 +7,99 @@
   <title>Expert Logistics</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/320.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1024px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "images/mock-ups/desktop.png" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
 <body>
-  <div class="active-mobile-menu">
-    <a href="tel:+74953633020" class="active-mobile-menu__item">+7 (495) 363–30–20</a>
-    <a href="#" class="active-mobile-menu__item">о компании</a>
-    <a href="#" class="active-mobile-menu__item">услуги</a>
-    <a href="#" class="active-mobile-menu__item">клиенты</a>
-    <a href="#" class="active-mobile-menu__item">регионы</a>
-    <a href="#" class="active-mobile-menu__item">карьера</a>
-    <a href="#" class="active-mobile-menu__item">контакты</a>
-  </div>
-  <!-- /.mobile-menu -->
-<header class="header">
-  <div class="container">
-    <div class="header-block">
-  <div class="header-logo">
-    <img src="images/logo.png" alt="expert logistic logo" class="hide-mobile">
-    <img src="images/logo-mini.png" alt="expert logistic logo" class="hide-desktop">
-  </div>
-  <!-- /.header-logo -->
-<div class="header-navbar">
-    <nav class="header-menu">
-    <a href="#" class="header-menu__item">о компании</a>
-    <a href="#" class="header-menu__item">услуги</a>
-    <a href="#" class="header-menu__item">клиенты</a>
-    <a href="#" class="header-menu__item">регионы</a>
-    <a href="#" class="header-menu__item">карьера</a>
-    <a href="#" class="header-menu__item">контакты</a>
-  </nav>
-  <!-- /.header-menu -->
-    <a href="tel:+74953633020" class="header-phone__item">+7 (495) 363–30–20</a>
-</div>
-<!-- /.header-navbar -->
-<button class="mobile-menu_btn">
-  <span class="mobile-menu_line"></span> <!-- /.mobile-menu_line -->
-</button>
-  <!-- /.mobile-menu_btn -->
-</div>
-<!-- /.header-block -->
-</div>
-<!-- /.container -->
-</header>
-<!-- /.header -->
+  <header class="header">
+        <div class="container">
+            <div class="header-items">
+                <div class="header-logo">
+                    <img class="header-logo_img" src="images/logo.png" alt="">
+                    <img class="header-logo_mini" src="images/logo-mini.png" alt="">
+                </div>
+                <!-- /.header-logo -->
+                <div class="header-menu">
+
+                    <a href="#" class="header-menu__item">О компании</a>
+                    <!-- /.header-menu__item -->
+                    <a href="#" class="header-menu__item">Услуги</a>
+                    <!-- /.header-menu__item -->
+                    <a href="#" class="header-menu__item">Клиенты</a>
+                    <!-- /.header-menu__item -->
+                    <a href="#" class="header-menu__item">Регионы</a>
+                    <!-- /.header-menu__item -->
+                    <a href="#" class="header-menu__item">Услуги</a>
+                    <!-- /.header-menu__item -->
+                    <a href="#" class="header-menu__item">Контакты</a>
+                    <!-- /.header-menu__item -->
+                </div>
+                <!-- /.header-menu -->
+                <a href="#" class="header-phone">+7 (495) 363 30 90</a>
+                <!-- /.header-phone -->
+                <button class="header-menu_btn">
+                  <span class="menu-button_line"></span> <!-- /.menu-button_line -->
+                </button> <!-- /.header-menu_btn -->
+            </div>
+            <!-- /.header-items -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+    <main class="main">
+
+    </main>
+    <!-- /.main -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-items">
+          <span class="footer-copy"> ООО «Экспрет логистик» &copy; 2019</span>
+          <!-- /.footer-copy -->
+          <span class="footer-download">Скачать презентацию <img src="images/download.png" alt="download icon"></span>
+          <!-- /.footer download -->
+          <div class="footer-nav">
+            <img src="images/leaf_icon.png" alt="leaf">
+            <span class="footer-nav-wrap">
+            <a href="" class="footer-nav__item">Безопасность</a>
+            <!-- /.footer-nav__item -->
+            <a href="" class="footer-nav__item">Лицензии и сертификаты</a>
+            <!-- /.footer-nav__item -->
+            <a href="" class="footer-nav__item">Вакансии</a>
+            <!-- /.footer-nav__item -->
+          </span>
+          <!-- /.footer-nav-wrap -->
+          </div>
+          <!-- /.footer-nav -->
+        </div>
+        <!-- /.footer-items -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 <script src="js/jquery-3.4.0.min.js"></script>
 <script src="js/menu.js"></script>
 </body>
