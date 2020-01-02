@@ -1,0 +1,127 @@
+.about
+  &-title
+    font-size: 48px
+    line-height: 59px
+    letter-spacing: 0.02em
+    +bold
+  &_title
+    margin-top: 160px
+    margin-bottom: 64px
+  &-description
+    max-width: 790px
+    font-size: 16px
+    line-height: 160%
+  &-description
+    margin-top: 40px
+  &-block
+    padding-top: 14%
+    padding-left: 10%
+    padding-right: 8%
+    background: url("../images/about-bg.png") no-repeat top center
+.appeal-block
+  display: flex
+  background: url("../images/advantages/signature.png") no-repeat bottom right
+  min-height: 550px
+  &__photo
+    margin-right: 56px
+    img
+      width: 400px
+      height: 488px
+  &__text
+    p
+      max-width: 600px
+      font-size: 16px
+      line-height: 160%
+
+.results-block
+  display: flex
+  justify-content: space-between
+  &__item
+    display: flex
+    flex-direction: column
+  &__number
+    font-size: 96px
+    line-height: 117px
+    letter-spacing: -0.04em
+    text-transform: uppercase
+    +bold
+  &__units
+    font-style: italic
+    font-size: 16px
+    line-height: 23px
+    letter-spacing: 0.02em
+    +bold
+  &__text
+    font-size: 16px
+    line-height: 23px
+    letter-spacing: 0.02em
+.advantages-block
+  display: flex
+  justify-content: space-between
+
+  &__item
+    text-align: center
+    flex-basis: 20%
+@media(max-width: 1023px) and (min-width: 768px)
+  .about
+    &-title
+      font-size: 36px
+      line-height: 44px
+      +bold
+    &_title
+      margin-top: 120px
+  .appeal-block
+    background: url("../images/advantages/signature.png") no-repeat 0% 70%
+    &__photo
+      img
+        width: 200px
+        height: 240px
+    &__text
+      font-size: 15px
+      line-height: 160%
+      max-width: 440px
+      p
+        &:first-child
+          margin-top: 0
+  .results-block
+    flex-wrap: wrap
+    justify-content: flex-start
+    &__item
+      flex-basis: 33%
+  .advantages-block
+    flex-wrap: wrap
+    justify-content: space-around
+    &__item
+      flex-basis: 34%
+      &:first-child
+        margin-bottom: 45px
+@media(max-width: 767px)
+  .about
+    &-title
+      font-size: 24px
+      line-height: 29px
+    &_title
+      margin-top: 40px
+      margin-bottom: 16px
+    &-description
+      font-size: 14px
+  .appeal-block
+    background: url("")
+    flex-direction: column
+    &__photo
+      img
+        width: 200px
+        height: 240px
+    &__text
+      p
+        font-size: 14px
+  .results-block
+    flex-direction: column
+    align-items: center
+    &__units
+      text-align: center
+    &__text
+      text-align: center
+  .advantages-block
+    flex-direction: column
+    align-items: center
