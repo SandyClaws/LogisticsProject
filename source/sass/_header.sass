@@ -8,7 +8,7 @@
     display: flex
     justify-content: space-between
   &-logo
-    z-index: 2
+    z-index: 5
     &_mini
       display: none
   &-menu
@@ -85,6 +85,8 @@
       transform: rotate(-45deg)
     &::after
       transform: rotate(45deg)
+.view-phone
+  visibility: visible!important
 @media(max-width: 1023px)
     .header
       padding: 0px 10px
@@ -118,3 +120,7 @@
             margin-bottom: 0
         &_btn
           display: inline-block
+@media(max-width: 767px)
+  .header
+    &-phone
+      visibility: hidden

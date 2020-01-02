@@ -91,7 +91,6 @@
     display: none
     height: 846px
     padding: 0% 5.5%
-    border: 2px solid green
     &_bg1
       background: #484848 url("../images/slider/first-bg.png") no-repeat center
       background-size: cover
@@ -102,19 +101,135 @@
       background: #484848 url("../images/slider/third-bg.png") no-repeat center
       background-size: cover
     &_bg4
-      background: #484848 url("../images/slider/map.png") no-repeat center
+      background: #484848 url("../images/slider/forth-bg.png") no-repeat center
       background-size: cover
     &s
-      border: 2px solid red
 .dot
   cursor: pointer
-  height: 15px
-  width: 15px
+  height: 12px
+  width: 64px
   margin: 0 2px
-  background-color: #bbb
-  border-radius: 50%
+  background: url("../images/slider/plain-dot.png") no-repeat center
+  background-size: cover
   display: inline-block
   transition: background-color 0.6s ease
   &s
+    left: 8%
+    position: absolute
+    bottom: -10%
+    z-index: 1
 .active
-  background-color: red
+  background: url("../images/slider/active-dot.png") no-repeat center
+
+@media(max-width: 1023px) and (min-width: 768px)
+  .dots
+    text-align: center
+  .slider
+    &-arrow
+      display: none
+    &-client
+      flex-basis: 40%
+      img
+        width: 100%
+      &_button
+        margin-top: 82px
+      &s
+        &-wrap
+    &-title
+      font-size: 40px
+    &-subtitle
+      margin-top: 40px
+      margin-bottom: 64px
+    &-button
+      margin-bottom: 80px
+      img
+        display: none
+    &-description
+      flex-direction: column
+      align-items: flex-start
+    &-service
+      flex-basis: 33.3%
+      &s
+        &-wrap
+
+@media(max-width: 767px)
+  .dot
+    background: #ffffff url("") no-repeat center
+    width: 10px
+    height: 10px
+    border-radius: 50px
+    &s
+      width: 120px
+      left: calc( 50% - 60px )
+      text-align: center
+  .active
+    background: #E75333 url("") no-repeat center
+    width: 10px
+    height: 10px
+    border-radius: 50px
+  .slider
+    &-client
+      flex-basis: 40%
+      img
+        width: 100%
+    &-arrow
+      display: none
+    &-service
+      display: flex
+      align-items: center
+      margin-bottom: 15px
+      &__title
+        margin-bottom: 0
+        max-width: 100%
+      &__line
+        width: 10px
+        margin-top: 0
+        margin-bottom: 0
+      &__icon
+        display: none
+      &s
+        &-wrap
+          flex-direction: column
+    &-button
+      width: 272px
+      margin-top: 86px
+      img
+        display: none
+    &-description
+      flex-direction: column-reverse
+    &-number
+      display: flex
+      margin-bottom: 20px
+      &__text
+      &__items
+        justify-content: flex-start
+        align-items: flex-start
+        font-size: 14px
+        line-height: 17px
+        background-color: transparent
+        color: #ffffff
+        height: 17px
+        flex-basis: 30%
+        margin-top: 0
+        max-width: 100px
+      &__title
+        height: 17px
+        font-size: 14px
+        line-height: 17px
+      &__value
+        font-size: 26px
+        text-align: right
+        min-width: 80px
+        margin-right: 12px
+      &s
+        &-wrap
+          flex-direction: column
+    &-title
+      font-size: 24px
+      margin-bottom: 40px
+    &-subtitle
+      display: none
+  .map-subtitle
+    display: block
+    margin-top: 24px
+    margin-bottom: 170px

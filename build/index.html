@@ -87,28 +87,34 @@
             <div class="slider-number">
               <div class="slider-number__value">6000</div>
               <!-- /.slider-number__value -->
-              <div class="slider-number__items">единиц</div>
+              <span class="slider-number__text">
+              <span class="slider-number__items">единиц</span>
               <!-- /.slider-number__items -->
-              <div class="slider-number__title">автопарк</div>
+              <span class="slider-number__title">автопарк</span>
               <!-- /.slider-number__title -->
+            </span>
             </div>
             <!-- /.slider-number -->
             <div class="slider-number">
               <div class="slider-number__value">35</div>
               <!-- /.slider-number__value -->
-              <div class="slider-number__items">локаций</div>
+              <span class="slider-number__text">
+              <span class="slider-number__items">локаций</span>
               <!-- /.slider-number__items -->
-              <div class="slider-number__title">по всей России</div>
+              <span class="slider-number__title">по всей России</span>
               <!-- /.slider-number__title -->
+            </span>
             </div>
             <!-- /.slider-number -->
 <div class="slider-number">
   <div class="slider-number__value">14</div>
   <!-- /.slider-number__value -->
-  <div class="slider-number__items">лет</div>
+  <span class="slider-number__text">
+  <span class="slider-number__items">лет</span>
   <!-- /.slider-number__items -->
-  <div class="slider-number__title">на рынке</div>
+  <span class="slider-number__title">на рынке</span>
   <!-- /.slider-number__title -->
+</span>
 </div>
 <!-- /.slider-number -->
           </div>
@@ -159,7 +165,10 @@
               <div class="slider-service__title">Горнодобывающая техника</div>
             </div>
             <!-- /.slider-service -->
-            <button class="slider-button btn">Услуги <img src="images/slider/arrow.png" alt="" srcset=""></button> <!-- /.slider-button btn -->
+            <div class="slider-service"></div>
+            <button class="slider-button service-btn btn">Услуги <img src="images/slider/arrow.png" alt="" srcset=""></button> <!-- /.slider-button btn -->
+          </div>
+          <!-- /.slider-service -->
           </div>
           <!-- /.slider-numbers-wrap -->
         </div>
@@ -185,7 +194,7 @@
 <!-- /.slider-arrow -->
 <div class="slider-client"><img src="images/slider/Rosneft.png" alt=""></div>
 <!-- /.slider-client -->
-            <button class="slider-button btn">Все клиенты <img src="images/slider/arrow.png" alt="" srcset=""></button> <!-- /.slider-button btn -->
+            <button class="slider-button slider-client_button btn">Все клиенты <img src="images/slider/arrow.png" alt="" srcset=""></button> <!-- /.slider-button btn -->
           </div>
           <!-- /.slider-clients-wrap -->
         </div>
@@ -196,7 +205,7 @@
       <div class="slider-item slider-item_bg4">
         <h1 class="slider-title slider_title">ОБШИРНАЯ ГЕОГРАФИЯ</h1>
         <!-- /.slider-title -->
-        <h3 class="slider-subtitle">«Эксперт-логистик» насчитывает более 20 филиалов
+        <h3 class="slider-subtitle map-subtitle">«Эксперт-логистик» насчитывает более 20 филиалов
           и 35 производственных участков на территории РФ</h3>
         <!-- /.slider-subtitle -->
         <div class="slider-description">
@@ -205,61 +214,16 @@
         <!-- /.slider-description -->
       </div>
       <!-- /.slider-item -->
-
-
-      <div class="slider-item slider-item_bg1">
-        <h1 class="slider-title slider_title">Транспортные решения для бизнеса</h1>
-        <!-- /.slider-title -->
-        <h3 class="slider-subtitle">«Эксперт-логистик» предоставляет полный комплекс транспортных услуг для вашей компании</h3>
-        <!-- /.slider-subtitle -->
-        <div class="slider-description">
-          <button class="slider-button btn">Подробнее <img src="images/slider/arrow.png" alt="" srcset=""></button> <!-- /.slider-button btn -->
-          <div class="slider-numbers-wrap">
-            <div class="slider-number">
-              <div class="slider-number__value">6000</div>
-              <!-- /.slider-number__value -->
-              <div class="slider-number__items">единиц</div>
-              <!-- /.slider-number__items -->
-              <div class="slider-number__title">автопарк</div>
-              <!-- /.slider-number__title -->
-            </div>
-            <!-- /.slider-number -->
-            <div class="slider-number">
-              <div class="slider-number__value">35</div>
-              <!-- /.slider-number__value -->
-              <div class="slider-number__items">локаций</div>
-              <!-- /.slider-number__items -->
-              <div class="slider-number__title">по всей России</div>
-              <!-- /.slider-number__title -->
-            </div>
-            <!-- /.slider-number -->
-<div class="slider-number">
-  <div class="slider-number__value">14</div>
-  <!-- /.slider-number__value -->
-  <div class="slider-number__items">лет</div>
-  <!-- /.slider-number__items -->
-  <div class="slider-number__title">на рынке</div>
-  <!-- /.slider-number__title -->
-</div>
-<!-- /.slider-number -->
-          </div>
-          <!-- /.slider-numbers-wrap -->
-        </div>
-        <!-- /.slider-description -->
-      </div>
-      <!-- /.slider-item -->
-
-
     </div>
     <!-- /.slider-items -->
     <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
     </div>
     <!-- /.dots -->
-  </div>
+  
   <!-- /.container -->
 </section>
 <!-- /.slider -->
@@ -298,12 +262,12 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
