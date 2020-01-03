@@ -106,28 +106,24 @@
     <span class="results-block__text">машино-часов</span> <!-- /.results-block__text -->
   </div>
   <!-- /.results-block__item -->
-
   <div class="results-block__item">
     <span class="results-block__number">114</span> <!-- /.results-block__number -->
     <span class="results-block__units">млн километров</span> <!-- /.results-block__units -->
     <span class="results-block__text">общий пробег</span> <!-- /.results-block__text -->
   </div>
   <!-- /.results-block__item -->
-
   <div class="results-block__item">
     <span class="results-block__number">24</span> <!-- /.results-block__number -->
     <span class="results-block__units">млн литорв</span> <!-- /.results-block__units -->
     <span class="results-block__text">топлива сожжено</span> <!-- /.results-block__text -->
   </div>
   <!-- /.results-block__item -->
-
   <div class="results-block__item">
     <span class="results-block__number">160</span> <!-- /.results-block__number -->
     <span class="results-block__units">млн тонн/км.</span> <!-- /.results-block__units -->
     <span class="results-block__text">грузооборот</span> <!-- /.results-block__text -->
   </div>
   <!-- /.results-block__item -->
-
   <div class="results-block__item">
     <span class="results-block__number">55</span> <!-- /.results-block__number -->
     <span class="results-block__units">млн человек</span> <!-- /.results-block__units -->
@@ -136,6 +132,15 @@
   <!-- /.results-block__item -->
 </div>
 <!-- /.results-block -->
+
+<div class="results-block__dots">
+  <span class="results-block__dot" onclick="currentSlide(1)"></span>
+  <span class="results-block__dot" onclick="currentSlide(2)"></span>
+  <span class="results-block__dot" onclick="currentSlide(3)"></span>
+  <span class="results-block__dot" onclick="currentSlide(4)"></span>
+  <span class="results-block__dot" onclick="currentSlide(5)"></span>
+    </div>
+    <!-- /.dots -->
 
 <h2 class="about-title about_title">Преимущества</h2>
 <!-- /.advantages-title -->
@@ -146,33 +151,35 @@
     <!-- /.advantages-block__text -->
   </div>
   <!-- /.advantages-block__item -->
-
   <div class="advantages-block__item">
     <img src="images/advantages/Operator.png" alt="">
     <p class="advantages-block__text">Диспетчерская служба <br> работает 24 часа</p>
     <!-- /.advantages-block__text -->
   </div>
   <!-- /.advantages-block__item -->
-
   <div class="advantages-block__item">
     <img src="images/advantages/Planet.png" alt="">
     <p class="advantages-block__text">18 филиалов и 35 станций <br> обслуживания техники <br> по всей России</p>
     <!-- /.advantages-block__text -->
   </div>
   <!-- /.advantages-block__item -->
-
   <div class="advantages-block__item">
     <img src="images/advantages/Umbrella.png" alt="">
     <p class="advantages-block__text">Работаем в любые погодные условия</p>
     <!-- /.advantages-block__text -->
   </div>
   <!-- /.advantages-block__item -->
-
 </div>
 <!-- /.advantages-block -->
+<div class="advantages-block__dots">
+  <span class="advantages-block__dot" onclick="currentSlideAv(1)"></span>
+  <span class="advantages-block__dot" onclick="currentSlideAv(2)"></span>
+  <span class="advantages-block__dot" onclick="currentSlideAv(3)"></span>
+  <span class="advantages-block__dot" onclick="currentSlideAv(4)"></span>
+    </div>
+    <!-- /.dots -->
 </div>
 <!-- /.about-block -->
-
   </div>
   <!-- /.container -->
 </main>
@@ -203,5 +210,74 @@
   <!-- /.container -->
 </footer>
 <!-- /.footer -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script>
+  var slideIndex = 1, slideIndexAv=1;
+  function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function plusSlidesAv(n) {
+  showSlidesAdv(slideIndexAv += n);
+}
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function currentSlideAv(n) {
+  showSlidesAdv(slideIndexAv = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("results-block__item");
+  var dots = document.getElementsByClassName("results-block__dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+function showSlidesAdv(n) {
+  var i;
+  var slides = document.getElementsByClassName("advantages-block__item");
+  var dots = document.getElementsByClassName("advantages-block__dot");
+  if (n > slides.length) {slideIndexAv = 1}
+  if (n < 1) {slideIndexAv = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexAv-1].style.display = "block";
+  dots[slideIndexAv-1].className += " active";
+}
+
+function windowSize(){
+    if ($(window).width() <= '768'){
+      $('.results-block__dots').show();
+      $('.advantages-block__dots').show();
+showSlides(slideIndex);
+showSlidesAdv(slideIndexAv);
+    } else {
+$('.results-block__item').attr("style", "");
+$('.advantages-block__item').attr("style", "");
+$('.results-block__dots').hide();
+$('.advantages-block__dots').hide();
+    }
+}
+
+$(window).on('load resize', windowSize);
+
+</script>
 </body>
 </html>
