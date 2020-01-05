@@ -1,0 +1,108 @@
+.job
+  padding-left: 48px
+  padding-top: 32px
+  padding-right: 29px
+  padding-bottom: 32px
+  border: none
+  border-bottom: 1px solid #fff
+  display: flex
+  justify-content: space-between
+  margin-left: 11%
+  &-btn
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.02em
+    border: none
+    border-bottom: 1px dashed #ffffff
+    background-color: transparent
+    color: #fff
+    height: 20px
+    background: url("../images/arrow_d.png") no-repeat center right
+    padding-right: 17px
+    cursor: pointer
+  &-text
+    display: flex
+    flex-direction: column
+    &__title
+      margin-bottom: 40px
+      font-size: 24px
+      line-height: 135%
+      letter-spacing: 0.02em
+      opacity: 0.8
+      +bold
+    &__desc
+      max-width: 800px
+      margin-bottom: 24px
+      margin-left: 37px
+      display: inline-block
+      font-size: 16px
+      line-height: 160%
+    &__link
+      display: inline-block
+      margin-left: 37px
+      background-color: transparent
+      border: none
+      cursor: pointer
+      color: #fff
+      border-bottom: 1px dashed #fff
+      font-size: 15px
+      line-height: 18px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      width: 226px
+      padding-bottom: 5px
+      img
+        margin-left: 5px
+  &s
+    &-block
+      background: url("../images/jobs-bg.png") no-repeat center
+      background-size: cover
+      min-height: 900px
+      padding-top: 232px
+      padding-right: 10%
+      padding-bottom: 74px
+    &-title
+    &-wrap
+.white-border
+  border: 1px solid #fff
+.hide-btn
+  background: url("../images/hide-btn.png") no-repeat center right
+@media(max-width: 1023px) and (min-width: 768px)
+  .job
+    &s
+      &-block
+        padding-top: 160px
+    &-text
+      &__title
+        font-size: 20px
+        margin-bottom: 32px
+      &__desc
+        font-size: 15px
+@media(max-width: 767px)
+  .job
+    padding: 0
+    padding-right: 5px
+    padding-left: 5px
+    padding-bottom: 5px
+    margin-left: 10px
+    &s
+      &-block
+        padding-top: 80px
+        padding-left: 5px
+        padding-right: 10px
+    &-text
+      &__title
+        font-size: 17px
+        margin-bottom: 24px
+        max-width: 250px
+      &__desc
+        font-size: 14px
+        max-width: 200px
+        margin-left: 5px
+      &__link
+        margin-left: 0
+    &-btn
+      color: transparent
+      width: 20px
+
+
