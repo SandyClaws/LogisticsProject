@@ -20,3 +20,19 @@ body
     background-color: rgba(#c1c1c1, 0.3)
 .main
   flex-grow: 1
+.input
+  border: none
+  border-bottom: 1px solid rgba(#383838, 0.2)
+  width: 360px
+  margin-right: 64px
+  &:placeholder
+    color: rgba(#383838, 0.2)
+    +bold
+.label
+  display: inline-block
+  background: url("../images/clip.png") no-repeat left center
+  padding: 5px
+  padding-left: 15px
+  border-bottom: 1px dashed rgba(#383838, 0.2)
+  color: rgba(#383838, 0.2)
+  text-transform: uppercase
