@@ -7,14 +7,7 @@
     align-items: center
     +bold
     &::before
-      content: ''
-      display: inline-block
-      width: 128px
-      height: 2px
-      border: none
-      background-color: #fff
-      opacity: 0.4
-      margin-right: 32px
+      @include line-before-title-lg
   &_title
     margin-top: 160px
     margin-bottom: 64px
@@ -28,7 +21,6 @@
   &-block
     padding-top: 14%
     padding-bottom: 3%
-    /*padding-left: 10%*/
     padding-right: 8%
     background: url("../images/about-bg.png") no-repeat top center
 .appeal-block

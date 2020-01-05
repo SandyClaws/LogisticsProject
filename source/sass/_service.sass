@@ -1,0 +1,156 @@
+.service
+  position: relative
+  margin-bottom: 20px
+  flex-basis: 33.3%
+  &-arrow
+    width: 50px
+    position: absolute
+    bottom: 10%
+    left: calc( 50% - 28% )
+    display: none
+    cursor: pointer
+  &-img
+    &-o
+      width: 117%
+      display: none
+      cursor: pointer
+    &-n
+      width: 117%
+      display: inline-block
+      cursor: pointer
+  &:hover
+    .service-arrow, .service-title
+      bottom: 28%
+    .service-img-n
+      display: none
+    .service-img-o
+      display: inline-block
+    .service-arrow
+      display: inline-block
+  &-title
+    position: absolute
+    bottom: 10%
+    left: calc( 50% - 28% )
+    width: 180px
+    font-size: 21px
+    line-height: 28px
+    letter-spacing: 0.02em
+    cursor: pointer
+  &s
+    &-block
+      background: url("../images/services-bg.png") no-repeat center
+      background-size: cover
+      min-height: 900px
+      padding-top: 232px
+    &-title
+      margin-bottom: 62px
+      font-size: 64px
+      line-height: 125%
+      letter-spacing: 0.02em
+      text-transform: uppercase
+      +bold
+      &::before
+        @include line-before-title-lg
+    &-wrap
+      display: flex
+.move-to-left1
+  transform: translate(-30%)
+.move-to-left2
+  transform: translate(-31%)
+.move-to-right
+  transform: translate(40%)
+.move-to-right2
+  transform: translate(130%)
+.b1
+  background: url("../images/services/car.png") no-repeat center
+  background-size: contain
+.b2
+  background: url("../images/services/cargo.png") no-repeat center
+  background-size: contain
+.cargow
+  width: 145%
+.busw
+  width: 131%
+@media(max-width: 1023px)
+  .service
+    &-img-n
+      display: none
+    &-img-o
+      display: none
+    &-arrow
+      display: none
+    &:hover
+      .service-img-o
+        display: none
+      .service-arrow
+        display: none
+      .service-img-n
+        display: none
+      .service-arrow, .service-title
+        bottom: 10%
+  .move-to-left1
+    transform: translate(0%)
+  .move-to-left2
+    transform: translate(0%)
+  .move-to-right
+    transform: translate(0%)
+  .move-to-right2
+    transform: translate(0%)
+  .service
+    width: 100%
+    margin-bottom: 0
+    height: 100%
+    &-title
+      position: static
+    &s
+      &-wrap
+        flex-direction: column
+      &-block
+        padding-top: 80px
+      &-title
+        font-size: 40px
+        line-height: 125%
+        margin-bottom: 24px
+  .bg1T
+    background: url("../images/services/carT.png") no-repeat center
+    background-size: cover
+  .bg2T
+    background: url("../images/services/cargoT.png") no-repeat center
+    background-size: cover
+  .bg3T
+    background: url("../images/services/busT.png") no-repeat center
+    background-size: cover
+  .bg4T
+    background: url("../images/services/spec-busT.png") no-repeat center
+    background-size: cover
+  .bg5T
+    background: url("../images/services/mountainT.png") no-repeat center
+    background-size: cover
+  .bg6T
+    background: url("../images/services/mountainT.png") no-repeat center
+    background-size: cover
+@media (max-width: 1023px) and ( min-width: 768px)
+  .service
+    &s
+      &-title
+        font-size: 40px
+        line-height: 125%
+    &-title
+      font-size: 32px
+      line-height: 39px
+      letter-spacing: 0.02em
+      width: 600px
+      padding-left: 46px
+@media (max-width: 767px)
+  .service
+    &-title
+      font-size: 18px
+      line-height: 24px
+      padding-left: 46px
+      width: 288px
+    &s
+      &-title
+        font-size: 24px
+        line-height: 125%
+        &::before
+          width: 0
