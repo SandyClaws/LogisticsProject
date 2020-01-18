@@ -3,62 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <title>Expert Logistics</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "img/320.png" );
-    }
-    /* Tablet */
-    @media ( min-width: 760px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "img/760.png" );
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1024px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "images/mock-ups/desktop.png" );
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
 </head>
 <body>
   <header class="header">
         <div class="container">
             <div class="header-items">
-                <div class="header-logo">
+                <a href="#" class="header-logo">
                     <img class="header-logo_img" src="images/logo.png" alt="">
                     <img class="header-logo_mini" src="images/logo-mini.png" alt="">
-                </div>
+                </a>
                 <!-- /.header-logo -->
-                <div class="header-menu">
-                    <a href="about.html" class="header-menu__item">О компании</a>
+                <nav class="header-menu">
+                  <ul class="header-menu__items">
+                    <li class="header-menu__item"><a href="about.html" class="header-menu__link">О компании</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                    <a href="services.html" class="header-menu__item">Услуги</a>
+                    <li class="header-menu__item"><a href="services.html" class="header-menu__link">Услуги</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                    <a href="#" class="header-menu__item">Клиенты</a>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Клиенты</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                    <a href="#" class="header-menu__item">Регионы</a>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Регионы</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                    <a href="jobs.html" class="header-menu__item">Карьера</a>
+                    <li class="header-menu__item"><a href="jobs.html" class="header-menu__link">Карьера</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                    <a href="#" class="header-menu__item">Контакты</a>
+                    <li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a> <!-- /.header-menu__link --></li>
                     <!-- /.header-menu__item -->
-                </div>
+                  </ul>
+                  <!-- /.header-menu__items -->
+                </nav>
                 <!-- /.header-menu -->
-                <a href="#" class="header-phone">+7 (495) 363 30 90</a>
+                <a href="#" class="header-phone">+7 (495) 363 30 90 20</a>
                 <!-- /.header-phone -->
                 <button class="header-menu_btn">
                   <span class="menu-button_line"></span> <!-- /.menu-button_line -->
