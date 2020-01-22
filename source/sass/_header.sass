@@ -1,28 +1,28 @@
 .header
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  z-index: 1
-  &-items
-    padding: 0px 48px
+  display: flex
+  justify-content: center
+  flex-grow: 0
+  &-container
     display: flex
-    justify-content: space-between
-    background-color: transparent
+    max-width: 1440px
+    flex-shrink: 0
+    flex-grow: 1
+  &__menu
+
   &-logo
-    z-index: 5
     &_mini
       display: none
   &-menu
-    padding-top: 40px
-    padding-bottom: 62px
+    padding-top: 2%
+    flex-shrink: 0
+    flex-grow: 1
     &__item
       margin-left: 32px
+      display: inline-block
+      &:first-child
+        margin-left: 350px
+      &:last-child
       &s
-        display: flex
-        margin: 0
-        margin-left: 19%
-        width: 100%
     &_btn
       width: 20px
       height: 20px
@@ -34,9 +34,6 @@
     &__link
       font-size: 14px
   &-phone
-    margin-top: 40px
-    display: inline-block
-    z-index: 2
 .menu-button_line
   display: inline-block
   position: absolute
